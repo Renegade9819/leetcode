@@ -1,17 +1,3 @@
-class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        if (len(nums) == 0):
-            return 0
-        
-        length = 1
-        for i in range(1, len(nums)):
-            if nums[i] != nums[i-1]:
-                nums[length] = nums[i]
-                length += 1
-        return length
-        
-        
-        
 '''
 This doesn't actually remove all the duplicates from the array.
 Example - input list = [1,1,2,2,3,4,4,5]
@@ -26,6 +12,20 @@ In reality, the array after the calculation becomes [1, 2, 3, 4, 5, 4, 4, 5],
 which is not technically the correct answer.
 '''
 
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if (len(nums) == 0):
+            return 0
+        
+        length = 1
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i-1]:
+                nums[length] = nums[i]
+                length += 1
+        return length
+        
+        
 
 ''' Here is another solution which actually removes the duplicate elements from the list and returns the length.
     But it is very inefficient.
