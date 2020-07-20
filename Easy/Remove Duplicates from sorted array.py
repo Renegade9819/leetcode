@@ -22,6 +22,6 @@ and returns the length upto the last unique element.
 leetcode accepts this answer because it only wants the length of the array
 uptil the last unique element.
 
-In reality, the array after the calculation becomes 1, 2, 3, 4, 5, 4, 4, 5],
+In reality, the array after the calculation becomes [1, 2, 3, 4, 5, 4, 4, 5],
 which is not technically the correct answer.
 '''
