@@ -13,4 +13,5 @@ class Solution:
 Alternative one liner solution -
 class Solution:
     def detectCapitalUse(self, word: str) -> bool:
+        return word.isupper() or word.islower() or word.istitle()
 '''
