@@ -1,12 +1,8 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
-        seen_add = seen.add
-        seen_twice = set(x for x in nums if x in seen or seen_add(x))
-        
-        if len(seen_twice) > 0:
-            return True
-        return False
+        if len(nums) == len(set(nums)):
+            return False
+        return True
 
 
 '''
@@ -29,3 +25,30 @@ class Solution:
             return True
         return False
 '''
+
+'''
+Solution - 3
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        seen = set()
+        seen_add = seen.add
+        seen_twice = set(x for x in nums if x in seen or seen_add(x))
+        
+        if len(seen_twice) > 0:
+            return True
+        return False
+'''
+
+'''
+Solution - 4
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hashmap = {}
+        for num in nums:
+            if num in hashmap: return True
+            else: hashmap[num] = 1
+        return False
+'''
+        
