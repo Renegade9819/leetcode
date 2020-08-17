@@ -26,3 +26,16 @@ Space complexity : O(1). We are not using any additional memory.
 
 Solution by - Anton_Skomarovskyi
 '''
+
+'''
+My Solution - 
+
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n <= 0: return False
+        
+        while n % 2 == 0:
+            n //= 2
+        
+        return n == 1
+'''
