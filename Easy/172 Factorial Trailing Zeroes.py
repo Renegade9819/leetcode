@@ -6,6 +6,8 @@
     Divide by 5^3 = 125; if you get a decimal, truncate to a whole number.
     Continue with ever-higher powers of 5, until your division results in a number less than 1. Once the division is less than 1, stop.
     Sum all the whole numbers you got in your divisions. This is the number of trailing zeroes.
+    
+    Reference :- https://www.purplemath.com/modules/factzero.htm
 
 '''
 
