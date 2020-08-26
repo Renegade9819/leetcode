@@ -20,3 +20,17 @@ class Solution:
                 return count
             else:
                 count += num
+
+                
+                
+'''
+Another method
+
+class Solution:
+    def trailingZeroes(self, n: int) -> int:
+        count = 0
+        while n != 0:
+            n = n // 5
+            count += n
+        return count
+'''
