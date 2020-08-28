@@ -6,7 +6,6 @@ class Solution:
         # The input is a 32 bits signed integer.
         # We place the rightmost bit at the leftmost position by doing << power, i.e. for first loop, n << 31.
         # if the input was 00000000000000000000000000011001, after getting the rightmost bit and left shifting...
-        # 00000000000000000000000000000000
         # 10000000000000000000000000000000 This happens in the first iteration. Then we decrement power by 1, so << 30
         # In the 4th iteration, the result will be 10010000000000000000000000000000
         while n:
